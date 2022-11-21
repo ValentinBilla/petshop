@@ -40,6 +40,9 @@ class Animal(models.Model):
         return self.name
 
     def move_to(self, spot: Equipement) -> tuple[bool, str]:
+        if self.spot == spot:
+            message = f"{self} is already in {spot}, good for him !"
+            return True, message
         if self.state != spot.state_before:
             message = f"Impossible to move to the {spot}, {self} is not {spot.state_before}."
             return False, message
