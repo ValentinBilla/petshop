@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}Petshop{% endblock %}</title>
+  {# Needed FontAwesome css #}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  {# Tailwind stylsheet #}
+  <link rel="stylesheet" type="text/css" href={% static 'css/tailwind.css' %}>
+</head>
+<body class="max-w-screen max-h-screen bg-slate-800 text-pink-100">
+  <header class="relative p-4 text-center text-4xl bg-slate-900">
+    <a href="/" class="font-bold z-50 text-pink-500">Welcome to our lovely petshop !!</a>
+  </header>
+  {% block content %}{% endblock %}
+  {# Needed script for FontAwesome #}
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+  data-auto-replace-svg="nest"></script>
+</body>
+</html>
