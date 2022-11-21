@@ -9,7 +9,7 @@ def petshop(request):
 
 def animal_detail(request, name, message=None):
     animal = Animal.objects.get(**{'name': name})
-    form = MoveForm(request.POST, instance=animal)
+    form = MoveForm(request.POST)
     
     context = None
 

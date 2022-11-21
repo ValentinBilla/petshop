@@ -1,4 +1,4 @@
-{% load static %}
+{% load tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +8,7 @@
   {# Needed FontAwesome css #}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   {# Tailwind stylsheet #}
-  <link rel="stylesheet" type="text/css" href={% static 'css/tailwind.css' %}>
+  {% tailwind_css %}
 </head>
 <body class="max-w-screen max-h-screen bg-slate-800 text-pink-100">
   <header class="relative p-4 text-center text-4xl bg-slate-900">
