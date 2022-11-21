@@ -40,9 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tailwind',
-    'theme',
-    "crispy_forms",
-    "crispy_tailwind",    
+    'theme',   
     'django_browser_reload',
     'petshop.apps.PetshopConfig'
 ]
@@ -50,11 +48,6 @@ INSTALLED_APPS = [
 NPM_BIN_PATH = "C://Program Files//nodejs//npm.cmd"
 
 TAILWIND_APP_NAME = 'theme'
-
-CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
-
-CRISPY_TEMPLATE_PACK = "tailwind"
-
 
 
 MIDDLEWARE = [
